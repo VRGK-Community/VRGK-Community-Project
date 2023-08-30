@@ -1,0 +1,17 @@
+{
+	"source": "UE",
+	"applications": [
+		{
+			"app_key": "application.generated.ue.vrgk-community-project-18319896.ue4editor.exe",
+			"launch_type": "url",
+			"url": "steam://launch/",
+			"strings":
+			{
+				"en_us":
+				{
+					"name": "VRGK Community Project-18319896 [UE Editor]"
+				}
+			}
+		}
+	]
+}

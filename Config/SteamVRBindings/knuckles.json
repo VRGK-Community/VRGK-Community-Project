@@ -1,0 +1,155 @@
+{
+	"name": "Default bindings for ValveIndex",
+	"controller_type": "knuckles",
+	"last_edited_by": "UnrealEngine",
+	"bindings":
+	{
+		"/actions/main":
+		{
+			"haptics" : [
+			   {
+				  "output" : "/actions/main/out/vibrateleft",
+				  "path" : "/user/hand/left/output/haptic"
+			   },
+			   {
+				  "output" : "/actions/main/out/vibrateright",
+				  "path" : "/user/hand/right/output/haptic"
+			   }
+			],
+			"poses" : [
+			   {
+				  "output" : "/actions/main/in/controllerleft",
+				  "path" : "/user/hand/left/pose/raw",
+				  "requirement" : "optional"
+			   },
+			   {
+				  "output" : "/actions/main/in/controllerright",
+				  "path" : "/user/hand/right/pose/raw"
+			   }
+			],
+			"skeleton" : [
+			   {
+				  "output" : "/actions/main/in/skeletonleft",
+				  "path" : "/user/hand/left/input/skeleton/left"
+			   },
+			   {
+				  "output" : "/actions/main/in/skeletonright",
+				  "path" : "/user/hand/right/input/skeleton/right"
+			   }
+			],
+			"sources" : [
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playertriggerleft"
+					 },
+					 "pull" : {
+						"output" : "/actions/main/in/playertriggerleft_axis axis"
+					 }
+				  },
+				  "mode" : "trigger",
+				  "path" : "/user/hand/left/input/trigger"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playertriggerright"
+					 },
+					 "pull" : {
+						"output" : "/actions/main/in/playertriggerright_axis axis"
+					 }
+				  },
+				  "mode" : "trigger",
+				  "path" : "/user/hand/right/input/trigger"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playersprint"
+					 },
+					 "position" : {
+						"output" : "/actions/main/in/playerthumbstickleft_x,playerthumbstickleft_y x y_axis2d"
+					 }
+				  },
+				  "mode" : "joystick",
+				  "path" : "/user/hand/left/input/thumbstick"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playerteleport"
+					 },
+					 "position" : {
+						"output" : "/actions/main/in/playerthumbstickright_x,playerthumbstickright_y x y_axis2d"
+					 }
+				  },
+				  "mode" : "joystick",
+				  "path" : "/user/hand/right/input/thumbstick"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playermenu"
+					 }
+				  },
+				  "mode" : "button",
+				  "path" : "/user/hand/left/input/b"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playerjump"
+					 }
+				  },
+				  "mode" : "button",
+				  "path" : "/user/hand/right/input/b"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playerbuttonleft"
+					 }
+				  },
+				  "mode" : "button",
+				  "path" : "/user/hand/left/input/a"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playerbuttonright"
+					 }
+				  },
+				  "mode" : "button",
+				  "path" : "/user/hand/right/input/a"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playergrableft"
+					 }
+				  },
+				  "mode" : "button",
+				  "parameters" : {
+					 "click_activate_threshold" : "0.6",
+					 "click_deactivate_threshold" : "0.5"
+				  },
+				  "path" : "/user/hand/left/input/grip"
+			   },
+			   {
+				  "inputs" : {
+					 "click" : {
+						"output" : "/actions/main/in/playergrabright"
+					 }
+				  },
+				  "mode" : "button",
+				  "parameters" : {
+					 "click_activate_threshold" : "0.6",
+					 "click_deactivate_threshold" : "0.5"
+				  },
+				  "path" : "/user/hand/right/input/grip"
+			   }
+			]
+		}
+	},
+	"description": "VRGK-18319896"
+}
